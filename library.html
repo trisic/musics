@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Music Streaming Website</title>
+    <link rel="stylesheet" href="jaslyn.css">
+</head>
+
+<body>
+<!-- Topbar -->
+<ul>
+    <li><a id="sidebar-toggle" href="javascript:void(0);" onclick="toggleSidebar()">&#9776;</a></li>
+    <li><a href="home.html" class="logo-button"><img class="logo-image" src="newlogo.png" alt="Logo"></a></li>
+    <div class="search-bar">
+        <input type="text" placeholder="Search...">
+    </div>
+    <li><a href="profile.html" class="profile-button"><img class="profile-image" src="Profile.png" alt="Profile"></a></li>
+</ul>
+
+<!-- Sidebar -->
+<aside>
+    <div class="sidebar">
+        <a href="javascript:void(0);" onclick="toggleSidebar()">Close &#10005;</a>
+        <a href="home.html">Home</a>
+        <a class="active" href="library.html">Library</a>
+        <a href="artist.html">Artist</a>
+        <a href="chart.html">Chart</a>
+        <a href="playlist.html">Playlist</a>
+        <a href="song.html">Song</a>
+    </div>
+</aside>
+
+    <!-- Library Page Content -->
+    <div class="container">
+        <main>
+            <div class="heading">Library</div>
+            <div class="image-container">
+                
+                <div class="thumbnail">
+                    <img src="keshi.jpeg" alt="Keshi">
+                    <h4><a href="playlist.html">Keshi's Song</a></h4>
+                </div>
+                <div class="thumbnail">
+                    <img src="Keshi2.jpg" alt="Keshi">
+                    <h4><a href="playlist.html">Keshi's Song</a></h4>
+                </div>
+                <div class="thumbnail">
+                    <img src="keshi3.jpg_large" alt="Keshi">
+                    <h4><a href="playlist.html">Keshi's Song</a></h4>
+                </div>
+            </div>
+        </main>
+        </div>
+    </div>
+
+<!-- Footer -->
+<footer>
+    <p>
+        by Zeqri, Jaslyn, Anis<br>
+        <a href="mailto:muhdzeqri03@gmail.com">Contact Us</a>
+    </p>
+  </footer>
+  
+  <br>
+  <br>
+  <br>
+  <br>
+  
+<!-- Bottom -->
+<div class="bottom">
+    <input type="range" name="range" id="myProgressBar" min="0" value="0" max="100">
+    <div class="icons">
+        <!-- fontawesome icons -->
+        <i class="fas fa-3x fa-step-backward" id="previous"></i>
+        <i class="far fa-3x fa-play-circle" id="masterPlay"></i>
+        <i class="fas fa-3x fa-step-forward" id="next"></i>
+    </div>
+    <div class="songInfo">
+        <img src="playing.gif" width="42px" alt="" id="gif"> <span id="masterSongName">Keshi - 2 soon</span>
+    </div>
+  </div>
+
+<script src="script.js"></script>
+<script src="https://kit.fontawesome.com/26504e4a1f.js" crossorigin="anonymous"></script>
+</body>
+</html>
